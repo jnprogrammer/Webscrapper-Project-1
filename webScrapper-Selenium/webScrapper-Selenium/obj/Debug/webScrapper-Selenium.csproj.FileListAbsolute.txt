@@ -1,2 +1,11 @@
 c:\users\gamma array\documents\visual studio 2015\Projects\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\webScrapper-Selenium.exe.config
 C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\webScrapper-Selenium.exe.config
+C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\webScrapper-Selenium.exe
+C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\webScrapper-Selenium.pdb
+C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\WebDriver.dll
+C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\WebDriver.Support.dll
+C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\WebDriver.xml
+C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\WebDriver.Support.xml
+C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.csprojResolveAssemblyReference.cache
+C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.exe
+C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.pdb
