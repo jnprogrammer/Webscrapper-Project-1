@@ -5,9 +5,9 @@ C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nu
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\bin\Debug\netcoreapp2.0\Nunit-Setup.runtimeconfig.dev.json
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\bin\Debug\netcoreapp2.0\Nunit-Setup.dll
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\bin\Debug\netcoreapp2.0\Nunit-Setup.pdb
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\obj\Debug\netcoreapp2.0\Nunit-Setup.csprojResolveAssemblyReference.cache
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\obj\Debug\netcoreapp2.0\Nunit-Setup.csproj.CoreCompileInputs.cache
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\obj\Debug\netcoreapp2.0\Nunit-Setup.AssemblyInfoInputs.cache
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\obj\Debug\netcoreapp2.0\Nunit-Setup.AssemblyInfo.cs
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\obj\Debug\netcoreapp2.0\Nunit-Setup.dll
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\obj\Debug\netcoreapp2.0\Nunit-Setup.pdb
-C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\obj\Debug\netcoreapp2.0\Nunit-Setup.csprojResolveAssemblyReference.cache

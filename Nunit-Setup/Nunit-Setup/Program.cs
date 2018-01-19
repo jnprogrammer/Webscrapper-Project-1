@@ -1,5 +1,7 @@
 ﻿using System;
 using System.IO;
+using System.Text;
+using System.Collections.Generic;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
@@ -17,13 +19,61 @@ namespace Nunit_Setup
             IWebDriver chromeDriver = new ChromeDriver(@"C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup");
             chromeDriver.Navigate().GoToUrl("https://coinmarketcap.com/all/views/all/");
 
-            var body = chromeDriver.FindElement(By.TagName("body")).Text;
+            var table = chromeDriver.FindElement(By.Id("currencies-all"));
+            var pauseTime = chromeDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            
+            var htmlBody = table.Text;
+            string pathToFile = @"C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\table.txt";
 
-            Console.WriteLine("Got that Data!");
+            foreach (var row in table.FindElements(By.TagName("thead")))
+            {
+                //Console.WriteLine(value: row);
+                try
+                {
+                    File.WriteAllText(pathToFile, htmlBody);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Err:" + e);
+                }
+            }
+            Console.WriteLine("Data saved to Text file");
 
 
         }
+
+
+      /*  void displayDataConsole(ChromeDriver chromdriver)
+        {
+            var table = chromeDriver.FindElement(By.Id("currencies-all"));
+
+
+            foreach (var row in table.FindElements(By.TagName("tr")))
+            {
+                Console.WriteLine(value: row);
+            }
+        }*/
+        //
+        void saveDataToFile(ChromeDriver chromeDriver)
+        {
+            var htmlBody = chromeDriver.PageSource;
+            string pathToFile = @"C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\htmlToScrape.html";
+            //StringBuilder htmlfile = new StringBuilder(htmlBody);
+
+            try
+            {
+                File.WriteAllText(pathToFile, htmlBody);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Err:" + e);
+            }
+
+            Console.WriteLine("Got that Data saved to a file! \n");
+        }
     }
+
+    
 }
 
 
