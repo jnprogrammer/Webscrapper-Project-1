@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Xml;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
@@ -15,12 +16,7 @@ namespace Nunit_Setup
         static void Main(string[] args)
         {
 
-
             Console.WriteLine("Let's get that Data!");
-
-            String thePatern = @"(\w+)\s+(var)";
-            Regex myRegex = new Regex(thePatern,RegexOptions.IgnoreCase);
-            Match matchMaker;
 
             IWebDriver chromeDriver = new ChromeDriver(@"C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup");
             chromeDriver.Navigate().GoToUrl("https://coinmarketcap.com/all/views/all/");

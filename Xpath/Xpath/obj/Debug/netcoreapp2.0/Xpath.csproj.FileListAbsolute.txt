@@ -1,0 +1,11 @@
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\bin\Debug\netcoreapp2.0\Xpath.deps.json
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\bin\Debug\netcoreapp2.0\Xpath.runtimeconfig.json
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\bin\Debug\netcoreapp2.0\Xpath.runtimeconfig.dev.json
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\bin\Debug\netcoreapp2.0\Xpath.dll
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\obj\Debug\netcoreapp2.0\Xpath.csproj.CoreCompileInputs.cache
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\obj\Debug\netcoreapp2.0\Xpath.AssemblyInfoInputs.cache
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\obj\Debug\netcoreapp2.0\Xpath.AssemblyInfo.cs
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\bin\Debug\netcoreapp2.0\Xpath.pdb
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\obj\Debug\netcoreapp2.0\Xpath.csprojResolveAssemblyReference.cache
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\obj\Debug\netcoreapp2.0\Xpath.dll
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Xpath\Xpath\obj\Debug\netcoreapp2.0\Xpath.pdb

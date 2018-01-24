@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xpath", "Xpath\Xpath.csproj", "{357F9AF9-CD04-4DE3-AFCF-20A89A1E82AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{357F9AF9-CD04-4DE3-AFCF-20A89A1E82AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357F9AF9-CD04-4DE3-AFCF-20A89A1E82AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357F9AF9-CD04-4DE3-AFCF-20A89A1E82AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357F9AF9-CD04-4DE3-AFCF-20A89A1E82AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F91E34-0805-405A-B5B0-54B45232576C}
+	EndGlobalSection
+EndGlobal

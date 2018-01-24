@@ -9,3 +9,14 @@ C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\
 C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.csprojResolveAssemblyReference.cache
 C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.exe
 C:\Users\Gamma Array\Documents\GitHub\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.pdb
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\webScrapper-Selenium.exe.config
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\webScrapper-Selenium.exe
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\webScrapper-Selenium.pdb
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\WebDriver.dll
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\WebDriver.Support.dll
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\WebDriver.xml
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\WebDriver.Support.xml
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.csprojResolveAssemblyReference.cache
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.csproj.CoreCompileInputs.cache
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.exe
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.pdb
