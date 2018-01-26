@@ -22,7 +22,7 @@ namespace Nunit_Setup
             chromeDriver.Navigate().GoToUrl("https://coinmarketcap.com/all/views/all/");
 
             var table = chromeDriver.FindElement(By.Id("currencies-all"));
-            var pauseTime = chromeDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            
             
             var htmlBody = table.Text;
             string pathToFile = @"C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\Nunit-Setup\Nunit-Setup\table.txt";
