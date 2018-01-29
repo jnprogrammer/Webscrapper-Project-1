@@ -36,6 +36,7 @@ namespace Nunit_Setup
                 try
                 {
                     File.WriteAllText(pathToFile, htmlBody);
+                    Console.WriteLine(htmlBody);
                 }
                 catch (Exception e)
                 {
