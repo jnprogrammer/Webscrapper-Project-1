@@ -266,11 +266,11 @@ namespace databaseExample {
             base.Tables.Add(this.tableRecipeIngredient);
             this.relationIngredientFK = new global::System.Data.DataRelation("IngredientFK", new global::System.Data.DataColumn[] {
                         this.tableIngredient.IdColumn}, new global::System.Data.DataColumn[] {
-                        this.tableRecipeIngredient.IngredientIDColumn}, false);
+                        this.tableRecipeIngredient.IngredientIdColumn}, false);
             this.Relations.Add(this.relationIngredientFK);
             this.relationRecipeFK = new global::System.Data.DataRelation("RecipeFK", new global::System.Data.DataColumn[] {
                         this.tableRecipe.IdColumn}, new global::System.Data.DataColumn[] {
-                        this.tableRecipeIngredient.RecipeIDColumn}, false);
+                        this.tableRecipeIngredient.RecipeIdColumn}, false);
             this.Relations.Add(this.relationRecipeFK);
         }
         
@@ -952,9 +952,9 @@ namespace databaseExample {
             
             private global::System.Data.DataColumn columnId;
             
-            private global::System.Data.DataColumn columnRecipeID;
+            private global::System.Data.DataColumn columnRecipeId;
             
-            private global::System.Data.DataColumn columnIngredientID;
+            private global::System.Data.DataColumn columnIngredientId;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -999,17 +999,17 @@ namespace databaseExample {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn RecipeIDColumn {
+            public global::System.Data.DataColumn RecipeIdColumn {
                 get {
-                    return this.columnRecipeID;
+                    return this.columnRecipeId;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn IngredientIDColumn {
+            public global::System.Data.DataColumn IngredientIdColumn {
                 get {
-                    return this.columnIngredientID;
+                    return this.columnIngredientId;
                 }
             }
             
@@ -1092,8 +1092,8 @@ namespace databaseExample {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
                 this.columnId = base.Columns["Id"];
-                this.columnRecipeID = base.Columns["RecipeID"];
-                this.columnIngredientID = base.Columns["IngredientID"];
+                this.columnRecipeId = base.Columns["RecipeId"];
+                this.columnIngredientId = base.Columns["IngredientId"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1101,10 +1101,10 @@ namespace databaseExample {
             private void InitClass() {
                 this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId);
-                this.columnRecipeID = new global::System.Data.DataColumn("RecipeID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRecipeID);
-                this.columnIngredientID = new global::System.Data.DataColumn("IngredientID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIngredientID);
+                this.columnRecipeId = new global::System.Data.DataColumn("RecipeId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRecipeId);
+                this.columnIngredientId = new global::System.Data.DataColumn("IngredientId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIngredientId);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -1113,8 +1113,8 @@ namespace databaseExample {
                 this.columnId.AllowDBNull = false;
                 this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
-                this.columnRecipeID.AllowDBNull = false;
-                this.columnIngredientID.AllowDBNull = false;
+                this.columnRecipeId.AllowDBNull = false;
+                this.columnIngredientId.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1386,23 +1386,23 @@ namespace databaseExample {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int RecipeID {
+            public int RecipeId {
                 get {
-                    return ((int)(this[this.tableRecipeIngredient.RecipeIDColumn]));
+                    return ((int)(this[this.tableRecipeIngredient.RecipeIdColumn]));
                 }
                 set {
-                    this[this.tableRecipeIngredient.RecipeIDColumn] = value;
+                    this[this.tableRecipeIngredient.RecipeIdColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int IngredientID {
+            public int IngredientId {
                 get {
-                    return ((int)(this[this.tableRecipeIngredient.IngredientIDColumn]));
+                    return ((int)(this[this.tableRecipeIngredient.IngredientIdColumn]));
                 }
                 set {
-                    this[this.tableRecipeIngredient.IngredientIDColumn] = value;
+                    this[this.tableRecipeIngredient.IngredientIdColumn] = value;
                 }
             }
             
@@ -2316,8 +2316,8 @@ SELECT Id, Name, PrepTime, Directions FROM Recipe WHERE (Id = @Id)";
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "RecipeIngredient";
             tableMapping.ColumnMappings.Add("Id", "Id");
-            tableMapping.ColumnMappings.Add("RecipeID", "RecipeID");
-            tableMapping.ColumnMappings.Add("IngredientID", "IngredientID");
+            tableMapping.ColumnMappings.Add("RecipeID", "RecipeId");
+            tableMapping.ColumnMappings.Add("IngredientID", "IngredientId");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;

@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cookbookDataSet = new databaseExample.cookbookDataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.lstRecipes = new System.Windows.Forms.ListBox();
+            this.lstIngredients = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cookbookDataSet = new databaseExample.cookbookDataSet();
+            this.btnAddRecipes = new System.Windows.Forms.Button();
+            this.txtRecipeName = new System.Windows.Forms.TextBox();
+            this.btnUpdateName = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cookbookDataSet)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cookbookDataSet
-            // 
-            this.cookbookDataSet.DataSetName = "cookbookDataSet";
-            this.cookbookDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(9, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 2;
@@ -53,17 +53,73 @@
             // 
             this.lstRecipes.FormattingEnabled = true;
             this.lstRecipes.ItemHeight = 16;
-            this.lstRecipes.Location = new System.Drawing.Point(16, 34);
+            this.lstRecipes.Location = new System.Drawing.Point(12, 123);
             this.lstRecipes.Name = "lstRecipes";
             this.lstRecipes.Size = new System.Drawing.Size(153, 196);
             this.lstRecipes.TabIndex = 3;
             this.lstRecipes.SelectedIndexChanged += new System.EventHandler(this.lstRecipes_SelectedIndexChanged);
+            // 
+            // lstIngredients
+            // 
+            this.lstIngredients.FormattingEnabled = true;
+            this.lstIngredients.ItemHeight = 16;
+            this.lstIngredients.Location = new System.Drawing.Point(351, 123);
+            this.lstIngredients.Name = "lstIngredients";
+            this.lstIngredients.Size = new System.Drawing.Size(153, 196);
+            this.lstIngredients.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label2.Location = new System.Drawing.Point(348, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Recipe Ingredients";
+            // 
+            // cookbookDataSet
+            // 
+            this.cookbookDataSet.DataSetName = "cookbookDataSet";
+            this.cookbookDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnAddRecipes
+            // 
+            this.btnAddRecipes.Location = new System.Drawing.Point(142, 17);
+            this.btnAddRecipes.Name = "btnAddRecipes";
+            this.btnAddRecipes.Size = new System.Drawing.Size(83, 44);
+            this.btnAddRecipes.TabIndex = 6;
+            this.btnAddRecipes.Text = "Add Recipe";
+            this.btnAddRecipes.UseVisualStyleBackColor = true;
+            this.btnAddRecipes.Click += new System.EventHandler(this.btnAddRecipes_Click);
+            // 
+            // txtRecipeName
+            // 
+            this.txtRecipeName.Location = new System.Drawing.Point(24, 28);
+            this.txtRecipeName.Name = "txtRecipeName";
+            this.txtRecipeName.Size = new System.Drawing.Size(100, 22);
+            this.txtRecipeName.TabIndex = 7;
+            // 
+            // btnUpdateName
+            // 
+            this.btnUpdateName.Location = new System.Drawing.Point(119, 72);
+            this.btnUpdateName.Name = "btnUpdateName";
+            this.btnUpdateName.Size = new System.Drawing.Size(106, 45);
+            this.btnUpdateName.TabIndex = 8;
+            this.btnUpdateName.Text = "Update Recipe Name";
+            this.btnUpdateName.UseVisualStyleBackColor = true;
+            this.btnUpdateName.Click += new System.EventHandler(this.btnUpdateName_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 414);
+            this.Controls.Add(this.btnUpdateName);
+            this.Controls.Add(this.txtRecipeName);
+            this.Controls.Add(this.btnAddRecipes);
+            this.Controls.Add(this.lstIngredients);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lstRecipes);
             this.Controls.Add(this.label1);
             this.Name = "frmMain";
@@ -80,6 +136,11 @@
         private cookbookDataSet cookbookDataSet;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lstRecipes;
+        private System.Windows.Forms.ListBox lstIngredients;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnAddRecipes;
+        private System.Windows.Forms.TextBox txtRecipeName;
+        private System.Windows.Forms.Button btnUpdateName;
     }
 }
 
