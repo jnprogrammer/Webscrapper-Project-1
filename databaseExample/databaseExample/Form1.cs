@@ -27,6 +27,24 @@ namespace databaseExample
         private void frmMain_Load(object sender, EventArgs e)
         {
             populateRecipes();
+            populateAllIngredients();
+        }
+
+        private void populateAllIngredients()
+        {
+            string query = "SELECT * FROM Ingredient";
+            using (connection = new SqlConnection(connectionString))
+            using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
+            {
+                DataTable ingredientTable = new DataTable();
+                adapter.Fill(ingredientTable);
+
+                lstAllIngredients.DisplayMember = "Name";
+                lstAllIngredients.ValueMember = "Id";
+                lstAllIngredients.DataSource = ingredientTable;
+
+            }
+
         }
 
         private void populateRecipes()
@@ -108,6 +126,24 @@ namespace databaseExample
 
             }
             populateRecipes();
+        }
+
+        private void btnAddToRecipe_Click(object sender, EventArgs e)
+        {
+            string query = "INSERT INTO RecipeIngredient VALUES(@RecipeId, @IngredientId)";
+            using (connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+                connection.Open();
+
+                command.Parameters.AddWithValue("@RecipeId", lstRecipes.SelectedValue);
+                command.Parameters.AddWithValue("@IngredientId", lstAllIngredients.SelectedValue);
+
+                command.ExecuteNonQuery();
+
+            }
+            populateRecipes();
+            populateAllIngredients();
         }
     }
 }
