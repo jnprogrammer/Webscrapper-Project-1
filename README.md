@@ -7,3 +7,5 @@ This single project will be a webscrapper that utlizes an SQL database written i
 	<li>Xpath</li>
 	<li>Entity Framework 6</li>
 </ul>
+
+Following project will be to intergrate this work into an ASP.NET site with a live sql server.
