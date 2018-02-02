@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CryptoCurrencyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="CryptoCurrencyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CryptoTable">
           <Key>
             <PropertyRef Name="Id" />
@@ -12,7 +12,7 @@
           <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Symbol" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="Market Cap" Type="money" Nullable="false" />
+          <Property Name="MarketCap" Type="money" Nullable="false" />
           <Property Name="Price" Type="money" Nullable="false" />
           <Property Name="CirculatingSupply" Type="int" />
           <Property Name="Volume24Hour" Type="money" />
@@ -24,8 +24,7 @@
         <EntityContainer Name="CryptoCurrencyModelStoreContainer">
           <EntitySet Name="CryptoTable" EntityType="Self.CryptoTable" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CryptoCurrencyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -36,7 +35,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Symbol" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="Market_Cap" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="MarketCap" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="CirculatingSupply" Type="Int32" />
           <Property Name="Volume24Hour" Type="Decimal" Precision="19" Scale="4" />
@@ -44,6 +43,7 @@
           <Property Name="Change24Hour" Type="Double" />
           <Property Name="ChangeDay" Type="Double" />
           <Property Name="CoinImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="MarketCap1" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
         </EntityType>
         <EntityContainer Name="CryptoCurrencyEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CryptoTables" EntityType="Self.CryptoTable" />
@@ -57,10 +57,10 @@
           <EntitySetMapping Name="CryptoTables">
             <EntityTypeMapping TypeName="CryptoCurrencyModel.CryptoTable">
               <MappingFragment StoreEntitySet="CryptoTable">
+                <ScalarProperty Name="MarketCap1" ColumnName="MarketCap" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Symbol" ColumnName="Symbol" />
-                <ScalarProperty Name="Market_Cap" ColumnName="Market Cap" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="CirculatingSupply" ColumnName="CirculatingSupply" />
                 <ScalarProperty Name="Volume24Hour" ColumnName="Volume24Hour" />

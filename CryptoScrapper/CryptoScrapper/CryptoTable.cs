@@ -17,7 +17,7 @@ namespace CryptoScrapper
         public int Id { get; set; }
         public string Name { get; set; }
         public string Symbol { get; set; }
-        public decimal Market_Cap { get; set; }
+        public decimal MarketCap { get; set; }
         public decimal Price { get; set; }
         public Nullable<int> CirculatingSupply { get; set; }
         public Nullable<decimal> Volume24Hour { get; set; }
@@ -25,5 +25,6 @@ namespace CryptoScrapper
         public Nullable<double> Change24Hour { get; set; }
         public Nullable<double> ChangeDay { get; set; }
         public byte[] CoinImage { get; set; }
+        public decimal MarketCap1 { get; set; }
     }
 }

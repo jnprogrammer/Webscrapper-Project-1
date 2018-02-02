@@ -27,9 +27,27 @@ namespace CryptoScrapper
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            using (var db = new CryptoCurrencyEntities())
+            {
+                Console.WriteLine("Enter data on a crypto currency");
+                var coinName = Console.ReadLine();
+                var coinSymbol = Console.ReadLine();
+                var marketCap = Console.ReadLine();
+                var price = Console.ReadLine();
+                var circulatingSupply = Console.ReadLine();
+                var volume24hr = Console.ReadLine();
+                var changeHour = Console.ReadLine();
+                var change24hr = Console.ReadLine();
+                var changeDay = Console.ReadLine();
+                
+/*
+                var cryptoTable = new CryptoTable { Id = 1,
+                                                    Name = coinName,
+                                                    Symbol = coinSymbol,
+                                                    MarketCap = 14,
+                                                                    };
+                db.CryptoTables.Add(cryptoTable);*/
+            }
         }
-
-
     }
 }
