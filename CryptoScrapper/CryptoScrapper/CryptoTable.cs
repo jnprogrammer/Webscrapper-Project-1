@@ -25,6 +25,5 @@ namespace CryptoScrapper
         public Nullable<double> Change24Hour { get; set; }
         public Nullable<double> ChangeDay { get; set; }
         public byte[] CoinImage { get; set; }
-        public decimal MarketCap1 { get; set; }
     }
 }

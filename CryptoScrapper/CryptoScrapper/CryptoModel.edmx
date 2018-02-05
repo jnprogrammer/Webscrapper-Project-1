@@ -43,7 +43,6 @@
           <Property Name="Change24Hour" Type="Double" />
           <Property Name="ChangeDay" Type="Double" />
           <Property Name="CoinImage" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <Property Name="MarketCap1" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
         </EntityType>
         <EntityContainer Name="CryptoCurrencyEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CryptoTables" EntityType="Self.CryptoTable" />
@@ -57,7 +56,6 @@
           <EntitySetMapping Name="CryptoTables">
             <EntityTypeMapping TypeName="CryptoCurrencyModel.CryptoTable">
               <MappingFragment StoreEntitySet="CryptoTable">
-                <ScalarProperty Name="MarketCap1" ColumnName="MarketCap" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Symbol" ColumnName="Symbol" />

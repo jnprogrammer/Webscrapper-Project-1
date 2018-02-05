@@ -21,8 +21,8 @@ namespace CryptoScrapper
         public frmMain()
         {
             InitializeComponent();
-            IWebDriver chromeDriver = new ChromeDriver();
-            chromeDriver.Navigate().GoToUrl("https://coinmarketcap.com/all/views/all/");
+           // IWebDriver chromeDriver = new ChromeDriver();
+           // chromeDriver.Navigate().GoToUrl("https://coinmarketcap.com/all/views/all/");
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -30,23 +30,31 @@ namespace CryptoScrapper
             using (var db = new CryptoCurrencyEntities())
             {
                 Console.WriteLine("Enter data on a crypto currency");
-                var coinName = Console.ReadLine();
-                var coinSymbol = Console.ReadLine();
-                var marketCap = Console.ReadLine();
-                var price = Console.ReadLine();
-                var circulatingSupply = Console.ReadLine();
-                var volume24hr = Console.ReadLine();
-                var changeHour = Console.ReadLine();
-                var change24hr = Console.ReadLine();
-                var changeDay = Console.ReadLine();
-                
-/*
+                var coinName = "Bitcoin";
+                var coinSymbol = "BTC";
+                var marketCap = 13453;
+                var price = 6920;
+                var circulatingSupply = 1679;
+                var volume24hr = 832649;
+                var changeHour = 61;
+                var change24hr = 90;
+                var changeDay = 38;
+
+
                 var cryptoTable = new CryptoTable { Id = 1,
-                                                    Name = coinName,
-                                                    Symbol = coinSymbol,
-                                                    MarketCap = 14,
-                                                                    };
-                db.CryptoTables.Add(cryptoTable);*/
+                    Name = coinName,
+                    Symbol = coinSymbol,
+                    MarketCap = marketCap,
+                    Price = price,
+                    CirculatingSupply = circulatingSupply,
+                    Volume24Hour = volume24hr,
+                    ChangeHour = changeHour,
+                    Change24Hour= change24hr,
+                    ChangeDay = changeDay
+                  };
+
+                db.CryptoTables.Add(cryptoTable);
+                db.SaveChanges();
             }
         }
     }
