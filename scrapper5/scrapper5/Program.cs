@@ -1,15 +1,18 @@
 ﻿using System;
-using System.Configuration;
-using System.Data.SqlClient;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Entity; 
 
-namespace CryptoScrapper3
+namespace scrapper5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            using (var db = new CryptoCurrencyEntities())
+
+            using (var db = new CryptoContext())
             {
                 Console.WriteLine("Enter data on a crypto currency");
                 var coinName = "Bitcoin";
@@ -18,23 +21,19 @@ namespace CryptoScrapper3
                 var price = 6920;
                 var circulatingSupply = 1679;
                 var volume24hr = 832649;
-                var changeHour = 61;
-                var change24hr = 90;
-                var changeDay = 38;
+               
 
 
                 var cryptoTable = new CryptoTable
                 {
                     Id = 1,
-                    Name = coinName,
-                    Symbol = coinSymbol,
+                    CoinName = coinName,
+                    CoinSymbol = coinSymbol,
                     MarketCap = marketCap,
                     Price = price,
-                    CirculatingSupply = circulatingSupply,
-                    Volume24Hour = volume24hr,
-                    ChangeHour = changeHour,
-                    Change24Hour = change24hr,
-                    ChangeDay = changeDay
+                    Circulating_Supply_ = circulatingSupply,
+                    Volume24hr = volume24hr
+                    
                 };
 
                 db.CryptoTables.Add(cryptoTable);
