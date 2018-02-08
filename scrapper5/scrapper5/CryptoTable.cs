@@ -6,7 +6,7 @@ namespace scrapper5
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("CryptoTable")]
+   // [Table("CryptoTable")]
     public partial class CryptoTable
     {
         public int Id { get; set; }
@@ -23,7 +23,7 @@ namespace scrapper5
 
         public int Price { get; set; }
 
-        [Column("Circulating Supply ")]
+        //[Column("Circulating Supply ")]
         public long Circulating_Supply_ { get; set; }
 
         public long Volume24hr { get; set; }

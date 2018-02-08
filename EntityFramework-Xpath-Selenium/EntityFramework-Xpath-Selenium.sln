@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework-Xpath-Selenium", "EntityFramework-Xpath-Selenium\EntityFramework-Xpath-Selenium.csproj", "{0A06846C-42FE-4ABF-A24F-A0DC376C77AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A06846C-42FE-4ABF-A24F-A0DC376C77AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A06846C-42FE-4ABF-A24F-A0DC376C77AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A06846C-42FE-4ABF-A24F-A0DC376C77AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A06846C-42FE-4ABF-A24F-A0DC376C77AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A32271A9-46C5-4FF7-AC9F-C294FDF05578}
+	EndGlobalSection
+EndGlobal

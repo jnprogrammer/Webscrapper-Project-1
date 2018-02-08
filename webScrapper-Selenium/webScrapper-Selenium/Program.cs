@@ -14,6 +14,24 @@ namespace webScrapper_Selenium
 {
     class Program
     {
+        public class CryptoTable
+        {
+            public int Id { get; set; }
+            
+            public string CoinName { get; set; }
+                        
+            public string CoinSymbol { get; set; }
+
+            public long MarketCap { get; set; }
+
+            public int Price { get; set; }
+
+            //[Column("Circulating Supply ")]
+            public long Circulating_Supply_ { get; set; }
+
+            public long Volume24hr { get; set; }
+        }
+
         static void Main(string[] args)
         {
             IWebDriver chromeDriver = new ChromeDriver();

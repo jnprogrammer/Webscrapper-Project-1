@@ -22,8 +22,6 @@ namespace scrapper5
                 var circulatingSupply = 1679;
                 var volume24hr = 832649;
                
-
-
                 var cryptoTable = new CryptoTable
                 {
                     Id = 1,
@@ -32,8 +30,7 @@ namespace scrapper5
                     MarketCap = marketCap,
                     Price = price,
                     Circulating_Supply_ = circulatingSupply,
-                    Volume24hr = volume24hr
-                    
+                    Volume24hr = volume24hr 
                 };
 
                 db.CryptoTables.Add(cryptoTable);
