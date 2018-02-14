@@ -4,6 +4,7 @@ using System.Xml;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Entity;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
@@ -22,16 +23,13 @@ namespace webScrapper_Selenium
                         
             public string CoinSymbol { get; set; }
 
-            public long MarketCap { get; set; }
-
             public int Price { get; set; }
-
-            //[Column("Circulating Supply ")]
-            public long Circulating_Supply_ { get; set; }
-
-            public long Volume24hr { get; set; }
+                      
         }
-
+        public class CryptoContext : DbContext
+        {
+            public DbSet<CryptoTable> CryptoTables { get; set; }
+        }
         static void Main(string[] args)
         {
             IWebDriver chromeDriver = new ChromeDriver();
@@ -48,21 +46,41 @@ namespace webScrapper_Selenium
 
 
 
-                foreach (var row in table.FindElements(By.TagName("thead")))
+               // foreach (var row in table.FindElements(By.TagName("tbody")))
+               
+                coinName = chromeDriver.FindElement(By.XPath("//table[@id='currencies-all']//tr/td//a[@class='currency-name-container']")).Text;
+                coinSymbol = chromeDriver.FindElement(By.XPath("//table[@id='currencies-all']//tr/td[@class='text-left col-symbol']")).Text;
+                coinPrice = chromeDriver.FindElement(By.XPath("//table[@id='currencies-all']//tr/td//a[@class='price']")).Text;
+
+                // < td class="text-left col-symbol">BTC</td>
+                Console.WriteLine(coinName);
+                Console.WriteLine(coinSymbol);
+                Console.WriteLine(coinPrice);
+
+
+
+                using (var db = new CryptoContext())
                 {
-                    coinName = chromeDriver.FindElement(By.XPath("//table[@id='currencies-all']//tr/td//a[@class='currency-name-container']")).Text;
+                    var aCryptoTable = new CryptoTable { CoinName = coinName, CoinSymbol = coinSymbol };
+                    db.CryptoTables.Add(aCryptoTable);
+                    db.SaveChanges();
 
+                    var query = from b in db.CryptoTables
+                                orderby b.CoinName
+                                select b;
 
-                    Console.WriteLine(coinName);
+                    foreach (var item in query)
+                    {
+                        Console.WriteLine(item.CoinSymbol);
+                    }
                 }
-                    /* coinSymbol = chromeDriver.FindElement(By.XPath("")).Text;
-                                                                                                                                                      coinPrice = chromeDriver.FindElement(By.XPath("")).Text;
-                                                                                                                                                      coinMarketCap = chromeDriver.FindElement(By.XPath("")).Text;
-                                                                                                                                                      coinSupply = chromeDriver.FindElement(By.XPath("")).Text;
-                                                                                                                                                      coinVolume24hr = chromeDriver.FindElement(By.XPath("")).Text;*/
+                /* coinSymbol = chromeDriver.FindElement(By.XPath("")).Text;
+                                                                                                                                       coinPrice = chromeDriver.FindElement(By.XPath("")).Text;
+                                                                                                                                                  coinMarketCap = chromeDriver.FindElement(By.XPath("")).Text;
+                                                                                                                                                  coinSupply = chromeDriver.FindElement(By.XPath("")).Text;
+                                                                                                                                                  coinVolume24hr = chromeDriver.FindElement(By.XPath("")).Text;*/
 
-                    //Console.WriteLine("{0} {1} Price:{2} MarketCap:{3} Supply:{4} 24Hr Volume: {5}\n",coinName,coinSymbol,coinPrice,coinMarketCap,coinSupply,coinVolume24hr);  ////table[@id='currencies-all']//tr[@id='id-bitcoin']
-                   
+                //Console.WriteLine("{0} {1} Price:{2} MarketCap:{3} Supply:{4} 24Hr Volume: {5}\n",coinName,coinSymbol,coinPrice,coinMarketCap,coinSupply,coinVolume24hr);  ////table[@id='currencies-all']//tr[@id='id-bitcoin']                   
             }
             catch (Exception e)
             {

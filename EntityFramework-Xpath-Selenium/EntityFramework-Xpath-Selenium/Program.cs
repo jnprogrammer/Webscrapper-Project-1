@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Text; 
 using System.Threading.Tasks;
 using System.Data.Entity;
 
@@ -16,6 +16,7 @@ namespace EntityFramework_Xpath_Selenium
                 // Create and save a new Blog 
                 Console.Write("Enter a name for a new Blog: ");
                 var name = Console.ReadLine();
+
 
                 var blog = new Blog { Name = name };
                 db.Blogs.Add(blog);

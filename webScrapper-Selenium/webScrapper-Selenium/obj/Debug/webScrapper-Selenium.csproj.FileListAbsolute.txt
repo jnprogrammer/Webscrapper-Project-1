@@ -20,3 +20,7 @@ C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Se
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.csproj.CoreCompileInputs.cache
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.exe
 C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\obj\Debug\webScrapper-Selenium.pdb
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\EntityFramework.dll
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\EntityFramework.xml
+C:\Users\jnprogrammer9\Documents\Projects\c#\webScrapper-Selenium\webScrapper-Selenium\webScrapper-Selenium\bin\Debug\EntityFramework.SqlServer.xml
