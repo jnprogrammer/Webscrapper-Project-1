@@ -15,10 +15,10 @@ namespace EntityFramework_Xpath_Selenium
             {
                 // Create and save a new Blog 
                 Console.Write("Enter a name for a new Blog: ");
-                var name = Console.ReadLine();
+                var theWords = Console.ReadLine();
 
 
-                var blog = new Blog { Name = name };
+                var blog = new Blog { Name = theWords };
                 db.Blogs.Add(blog);
                 db.SaveChanges();
 
@@ -62,5 +62,5 @@ namespace EntityFramework_Xpath_Selenium
         public DbSet<Post> Posts { get; set; }
     }
 
-   
+
 }
