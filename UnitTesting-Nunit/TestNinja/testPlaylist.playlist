@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="TestNinja.UnitTests.ErrorLoggerTests.Log_WhenCalled_SetTheLastErrorProperty" /></Playlist>
