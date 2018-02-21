@@ -11,11 +11,9 @@ namespace TestNinja.Fundamentals
         
         public void Log(string error)
         {
-            //What to test for
             // null
             // ""
             // " "
-
             if (String.IsNullOrWhiteSpace(error))
                 throw new ArgumentNullException();
                 
