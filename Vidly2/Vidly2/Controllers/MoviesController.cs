@@ -11,13 +11,13 @@ namespace Vidly2.Controllers
     public class MoviesController : Controller
     {
         // GET: Movies
-        public ActionResult Random()
+        public ViewResult Random()
         {
             var movie = new Movie() { Name = "The Big Short" };
             var customers = new List<Customer>
             {
-                new Customer{Name="Customer BTC"},
-                new Customer{Name="Customer ADA"}
+               // new Customer{Name="Customer BTC"},
+                //new Customer{Name="Customer ADA"}
             };
 
             var viewModel = new RandomMovieViewModel
@@ -29,7 +29,7 @@ namespace Vidly2.Controllers
            
         }
 
-       /* [Route("movies/released/{year}/{month:regex(\\d{4}}")]
+        /*[Route("movies/released/{year}/{month:regex(\\d{4}}")]
         public ActionResult ByReleaseDate(int year, int month)
         {
             return Content(year + "/" + month); 
@@ -49,7 +49,7 @@ namespace Vidly2.Controllers
         public ActionResult Edit(int id)
         {
             return Content("id=" + id);
-        }
+        } 
 
         public ActionResult Index(int? pageIndex, string sortBy)
         {
