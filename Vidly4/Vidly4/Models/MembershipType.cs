@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+
 namespace Vidly4.Models
 {
     public class MembershipType
@@ -12,6 +13,6 @@ namespace Vidly4.Models
         public byte DurationInMonths { get; set; }
         public byte DiscountRate { get; set; }  
         public string MembershipTitle { get; set; }
-
+        public DateTime Birthday { get; set; }
     }
 }
