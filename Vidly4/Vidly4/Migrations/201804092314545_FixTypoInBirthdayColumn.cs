@@ -3,7 +3,7 @@ namespace Vidly4.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddBirthdayToMembershipType1 : DbMigration
+    public partial class FixTypoInBirthdayColumn : DbMigration
     {
         public override void Up()
         {
