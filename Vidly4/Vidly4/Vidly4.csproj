@@ -229,6 +229,18 @@
     <Compile Include="Migrations\201804092300504_addMembershipTitleToDb.Designer.cs">
       <DependentUpon>201804092300504_addMembershipTitleToDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804092314545_FixTypoInBirthdayColumn.cs" />
+    <Compile Include="Migrations\201804092314545_FixTypoInBirthdayColumn.Designer.cs">
+      <DependentUpon>201804092314545_FixTypoInBirthdayColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804092332457_PopulateCustomerTableWithData.cs" />
+    <Compile Include="Migrations\201804092332457_PopulateCustomerTableWithData.Designer.cs">
+      <DependentUpon>201804092332457_PopulateCustomerTableWithData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804100008349_AddBirthdayDataToTable.cs" />
+    <Compile Include="Migrations\201804100008349_AddBirthdayDataToTable.Designer.cs">
+      <DependentUpon>201804100008349_AddBirthdayDataToTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -346,6 +358,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804092300504_addMembershipTitleToDb.resx">
       <DependentUpon>201804092300504_addMembershipTitleToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804092314545_FixTypoInBirthdayColumn.resx">
+      <DependentUpon>201804092314545_FixTypoInBirthdayColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804092332457_PopulateCustomerTableWithData.resx">
+      <DependentUpon>201804092332457_PopulateCustomerTableWithData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804100008349_AddBirthdayDataToTable.resx">
+      <DependentUpon>201804100008349_AddBirthdayDataToTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
