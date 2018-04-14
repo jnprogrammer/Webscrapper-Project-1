@@ -1,26 +1,31 @@
-﻿	@{
-	ViewBag.Title = "Customers";
+﻿@model IEnumerable<Vidly4.Models.Movie>
+	@{
+	ViewBag.Title = "Movie Details";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 	}
 	
 	<h2>Customers</h2>
 	@if (!Model.Any())
 		{
-			<p> We don't have any customers yet.</p>
+			<p> We don't have any Movies Listed yet.</p>
 		}
 	else
 	{
 	 <table class="table table-bordered table-hover">
 		<thead>
 			<tr>
-				<th>Customer</th>
+				<th>Movie</th>
+				<th>Genre</th>
+				<th>Release Date</th>
+				<th>Units In Stock</th>
+				<th>Date Added</th>
 			</tr>
 		</thead>
 		<tbody>
-			@foreach(var customer in Model)
+			@foreach(var movie in Model)
 			{
 			<tr>
-				@*<td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id}, null)</td>*@
+				<td>@Html.ActionLink(movie.Title, "Details", "Customers", new { id = movie.Id}, null)</td>
 			</tr>
 			}
 		</tbody>
