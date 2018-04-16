@@ -245,6 +245,22 @@
     <Compile Include="Migrations\201804141820206_creatingMovieTableAndUpdatingCustomerTable.Designer.cs">
       <DependentUpon>201804141820206_creatingMovieTableAndUpdatingCustomerTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804161405219_editMovieDataBase.cs" />
+    <Compile Include="Migrations\201804161405219_editMovieDataBase.Designer.cs">
+      <DependentUpon>201804161405219_editMovieDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804161425065_RemoveBirthdayFromMemberShipTypes.cs" />
+    <Compile Include="Migrations\201804161425065_RemoveBirthdayFromMemberShipTypes.Designer.cs">
+      <DependentUpon>201804161425065_RemoveBirthdayFromMemberShipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804161443449_AddColumnBirthdaytoCustomersTable.cs" />
+    <Compile Include="Migrations\201804161443449_AddColumnBirthdaytoCustomersTable.Designer.cs">
+      <DependentUpon>201804161443449_AddColumnBirthdaytoCustomersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804161446391_PopulateBirthdayColumnInCustomersTable.cs" />
+    <Compile Include="Migrations\201804161446391_PopulateBirthdayColumnInCustomersTable.Designer.cs">
+      <DependentUpon>201804161446391_PopulateBirthdayColumnInCustomersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -322,6 +338,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Movies\MovieDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -375,6 +392,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804141820206_creatingMovieTableAndUpdatingCustomerTable.resx">
       <DependentUpon>201804141820206_creatingMovieTableAndUpdatingCustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161405219_editMovieDataBase.resx">
+      <DependentUpon>201804161405219_editMovieDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161425065_RemoveBirthdayFromMemberShipTypes.resx">
+      <DependentUpon>201804161425065_RemoveBirthdayFromMemberShipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161443449_AddColumnBirthdaytoCustomersTable.resx">
+      <DependentUpon>201804161443449_AddColumnBirthdaytoCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161446391_PopulateBirthdayColumnInCustomersTable.resx">
+      <DependentUpon>201804161446391_PopulateBirthdayColumnInCustomersTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
