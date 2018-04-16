@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web.Mvc;
 using Vidly5.Models;
 
-namespace Vidly4.Controllers
+namespace Vidly5.Controllers
 {
     public class CustomersController : Controller
     {

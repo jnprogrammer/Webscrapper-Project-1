@@ -225,6 +225,14 @@
     <Compile Include="Migrations\201804161832564_PopulateMembershipTypeColumnMembershipTitle.Designer.cs">
       <DependentUpon>201804161832564_PopulateMembershipTypeColumnMembershipTitle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804161929257_addMovieTableandMovieInfoTable.cs" />
+    <Compile Include="Migrations\201804161929257_addMovieTableandMovieInfoTable.Designer.cs">
+      <DependentUpon>201804161929257_addMovieTableandMovieInfoTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804161950181_PopulateCustomersTable.cs" />
+    <Compile Include="Migrations\201804161950181_PopulateCustomersTable.Designer.cs">
+      <DependentUpon>201804161950181_PopulateCustomersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -232,6 +240,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MovieInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
@@ -335,6 +344,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804161832564_PopulateMembershipTypeColumnMembershipTitle.resx">
       <DependentUpon>201804161832564_PopulateMembershipTypeColumnMembershipTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161929257_addMovieTableandMovieInfoTable.resx">
+      <DependentUpon>201804161929257_addMovieTableandMovieInfoTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804161950181_PopulateCustomersTable.resx">
+      <DependentUpon>201804161950181_PopulateCustomersTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
